@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-447182d6e834df7bb407.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tugas1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas1-Debug-f3e4897aa31f19b3786f.json",
+					"name" : "tugas1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas1_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas1_autogen-Debug-171118011644988764cf.json",
+					"name" : "tugas1_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tugas1_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tugas1_autogen_timestamp_deps-Debug-06f0798c1e7f9db8028f.json",
+					"name" : "tugas1_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug",
+		"source" : "C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
