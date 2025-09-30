@@ -11,6 +11,7 @@ Saya bertanya AI mengenai:
 
 # Collaboration usage
 Explain how you are ***using others*** to complete the assignment in this section. Are they simply copying, learn the ideas, learn how to adapt the AI or anything involving the process. State the people if any & Please be elaborate. Declare self tought if you solved this by yourself. 
+Saya bertanya ke beberapa teman saya jika tidak paham cara menggunakan QT atau jika AI pun tidak mampu membuat saya mengerti atau paham dengan algoritmanya
 
 # Commit Rules
 Use .gitignore to stripe any binaries from the resulting build before commit.  If you cloned directly from the template, you are safe. 
