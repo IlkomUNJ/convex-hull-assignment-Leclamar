@@ -4,7 +4,10 @@ Name : Marcella Calista K. (1313623031)
 
 # AI usage
 Explain how you use the AI to solve the assignment. Put all ***your used queries*** in this section & what kind of AI are you using. Declare not using AI if you didn't do this.  
-
+Saya bertanya AI mengenai:
+- Cara membenarkan error atau kode yang outputnya tidak sesuai harapan saya
+- Mengcopas beberapa kode lain yang saya temui di internet seperti GeeksforGeeks untuk menjelaskan bagaimana alur kerjanya
+- Meminta saran dari AI mengenai bagaimana caranya membuat slow convex hull dan convex hull dapat berdampingan
 
 # Collaboration usage
 Explain how you are ***using others*** to complete the assignment in this section. Are they simply copying, learn the ideas, learn how to adapt the AI or anything involving the process. State the people if any & Please be elaborate. Declare self tought if you solved this by yourself. 

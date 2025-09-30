@@ -1,0 +1,14 @@
+# ninja log v5
+2977	7908	7809533786791259	CMakeFiles/tugas1.dir/main.cpp.obj	c11f5dcc6226580
+37	2895	7809542322049561	tugas1_autogen/timestamp	12ecd6c1f7d79e5e
+3374	8032	7809542421518946	CMakeFiles/tugas1.dir/mainwindow.cpp.obj	82ead8e23b851c64
+37	2895	7809542322049561	tugas1_autogen/mocs_compilation.cpp	12ecd6c1f7d79e5e
+7909	10181	7809533808952588	tugas1.exe	57372cca99ccc631
+37	2895	7809542322049561	C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/tugas1_autogen/timestamp	12ecd6c1f7d79e5e
+37	2895	7809542322049561	C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/tugas1_autogen/mocs_compilation.cpp	12ecd6c1f7d79e5e
+6124	12545	7809486961840883	CMakeFiles/tugas1.dir/tugas1_autogen/mocs_compilation.cpp.obj	e92af6b5ea0104ea
+36	3460	7809544063307827	tugas1_autogen/timestamp	12ecd6c1f7d79e5e
+36	3460	7809544063307827	tugas1_autogen/mocs_compilation.cpp	12ecd6c1f7d79e5e
+36	3460	7809544063307827	C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/tugas1_autogen/timestamp	12ecd6c1f7d79e5e
+36	3460	7809544063307827	C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/tugas1_autogen/mocs_compilation.cpp	12ecd6c1f7d79e5e
+3761	7923	7809544147457827	CMakeFiles/tugas1.dir/mainwindow.cpp.obj	82ead8e23b851c64

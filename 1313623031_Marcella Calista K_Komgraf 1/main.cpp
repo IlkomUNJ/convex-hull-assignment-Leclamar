@@ -28,10 +28,10 @@ public:
     std::vector<QPointF> points;
     std::set<Edge> edges;
     QString title;
-    int iterationCount; // New member to store the count
+    int iterationCount;
 
     DrawCanvas(QString t, QWidget *parent=nullptr) : QWidget(parent), title(t), iterationCount(0) {
-        setFixedSize(400,600); // lebih kecil biar muat berdampingan
+        setFixedSize(400,600);
     }
 
 protected:
@@ -40,7 +40,6 @@ protected:
         p.setRenderHint(QPainter::Antialiasing);
         p.fillRect(rect(), QColor(245,245,245));
 
-        // draw edges (omitted for brevity)
         QPen pen(QColor(20,120,200));
         pen.setWidth(2);
         p.setPen(pen);
@@ -48,7 +47,6 @@ protected:
             p.drawLine(points[e.i], points[e.j]);
         }
 
-        // draw points (omitted for brevity)
         for (int i=0; i<(int)points.size(); ++i) {
             QRectF r(points[i].x()-4, points[i].y()-4, 8, 8);
             p.setBrush(Qt::white);
@@ -59,7 +57,6 @@ protected:
 
         p.setPen(Qt::black);
         p.drawText(10,20,title);
-        // Display the iteration count (Updated from "Haiii")
         p.drawText(10,35, QString("Iterations: %1").arg(iterationCount));
     }
 };
@@ -74,7 +71,6 @@ public:
         slowCanvas = new DrawCanvas("Slow Hull (Brute Force)");
         fastCanvas = new DrawCanvas("Fast Hull (Monotone Chain)");
 
-        //titik titiknya
         std::vector<QPointF> pts = {
             {100,100},
             {214,150},
@@ -106,14 +102,14 @@ public:
 private:
     void computeSlowHull() {
         int n = (int)slowCanvas->points.size();
-        int& count = slowCanvas->iterationCount; // Reference the counter
-        count = 0; // Reset or initialize
+        int& count = slowCanvas->iterationCount;
+        count = 0;
 
         for (int i=0;i<n;i++) {
             for (int j=i+1;j<n;j++) {
                 bool pos=false, neg=false;
                 for (int k=0;k<n;k++) {
-                    count++; // Increment counter for each cross product calculation
+                    count++;
                     if (k==i||k==j) continue;
                     double s = cross(slowCanvas->points[i], slowCanvas->points[j], slowCanvas->points[k]);
                     if (s>1e-9) pos=true;
@@ -130,13 +126,12 @@ private:
 
     void computeFastHull() {
         int n = (int)fastCanvas->points.size();
-        int& count = fastCanvas->iterationCount; // Reference the counter
-        count = 0; // Reset or initialize
+        int& count = fastCanvas->iterationCount;
+        count = 0;
 
         std::vector<int> idx(n);
         for (int i=0;i<n;i++) idx[i]=i;
 
-        // Sorting is O(n log n), typically not counted as "iterations" for hull building
         std::sort(idx.begin(), idx.end(), [&](int a,int b){
             if (fastCanvas->points[a].x()==fastCanvas->points[b].x())
                 return fastCanvas->points[a].y()<fastCanvas->points[b].y();
@@ -144,39 +139,32 @@ private:
         });
 
         std::vector<int> hull;
-        // Build lower hull
         for (int id: idx) {
             while (hull.size()>=2 && cross(
                                            fastCanvas->points[hull[hull.size()-2]],
                                            fastCanvas->points[hull[hull.size()-1]],
                                            fastCanvas->points[id]) <= 0) {
-                count++; // Increment counter
+                count++;
                 hull.pop_back();
             }
-            // The first time through the while loop might not happen for the first two points.
-            // If the while condition is false, the cross product is calculated once.
-            // A more precise count would be to increment *before* the loop, but this is a good approximation.
             if (hull.size()>=2) count++;
             hull.push_back(id);
         }
 
         int t = hull.size()+1;
-        // Build upper hull
         for (int i=n-2;i>=0;i--) {
             int id = idx[i];
             while (hull.size()>=t && cross(
                                            fastCanvas->points[hull[hull.size()-2]],
                                            fastCanvas->points[hull[hull.size()-1]],
                                            fastCanvas->points[id]) <= 0) {
-                count++; // Increment counter
+                count++;
                 hull.pop_back();
             }
-            // Same logic for counting the first check
             if (hull.size()>=t) count++;
             hull.push_back(id);
         }
         hull.pop_back();
-        // ... rest of edge insertion
         for (size_t i=0;i<hull.size();i++) {
             int a=hull[i], b=hull[(i+1)%hull.size()];
             Edge e{std::min(a,b), std::max(a,b)};
