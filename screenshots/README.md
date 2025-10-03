@@ -1,0 +1,1 @@
+PS: Pada paruh waktu pertama saya menggunakan gemini sebelum berpindah ke ChatGPT namun nampaknya promptnya sudah saya hapus
