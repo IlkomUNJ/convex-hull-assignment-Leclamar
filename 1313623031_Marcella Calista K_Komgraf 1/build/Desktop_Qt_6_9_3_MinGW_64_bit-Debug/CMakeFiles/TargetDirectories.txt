@@ -1,0 +1,9 @@
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tugas1.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tugas1_autogen_timestamp_deps.dir
+C:/Coolyeahhh/Semester 5/Komputer Grafik/tugas1/build/Desktop_Qt_6_9_3_MinGW_64_bit-Debug/CMakeFiles/tugas1_autogen.dir
